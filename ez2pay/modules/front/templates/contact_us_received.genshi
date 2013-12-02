@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+    <xi:include href="../../../templates/master.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <title>Contact us</title>
+</head>
+
+<body>
+
+<h2>Contact us</h2>
+
+<div class="content">
+    We have received your message, thank you
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+  <xi:include href="master.genshi" />
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+</head>
+
+<body>
+
+<h2>Account activation</h2>
+
+<p>Hi ${ user_name },</p>
+
+<p>Thanks for your registration! To activate your account, please
+ click the link</p> 
+
+<a href="${ link }">${ link }</a> 
+
+<p>If you didn't register the account on ez2pay, please just ignore this email.</p>
+
+<p>
+  <br />
+  ez2pay team
+</p>
+
+</body>
+</html>

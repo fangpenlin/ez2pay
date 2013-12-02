@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+    <xi:include href="../../../templates/master.genshi" />
+    <xi:include href="../../../templates/widgets/form.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <title>Contact us</title>
+</head>
+
+<body>
+
+<h2>Contact us</h2>
+
+<p>If you have any idea or question, fell free to contact us :D</p>
+
+${ standard_form(
+    form=form, 
+    action=request.route_url('front.contact_us'), 
+    submit=_('Send')
+) }
+
+</body>
+</html>

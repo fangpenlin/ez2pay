@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      py:strip="">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+</head>
+
+<body py:match="body" py:attrs="select('@*')">
+
+  <table width="100%">
+    <tr><td>
+      <table width="600" style="background-color: #FFFFFF; border: 1px solid black; padding: 10px;">  
+        <tr>
+          <td>
+            <h1 style="margin: 0;"><a href="${ request.route_url('front.home') }">ez2pay</a></h1>
+            <div py:replace="select('*|text()')"/>
+          </td>
+        </tr>  
+      </table>
+    </td></tr>
+  </table>
+
+</body>
+</html>

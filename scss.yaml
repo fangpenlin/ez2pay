@@ -1,0 +1,36 @@
+---
+ 
+monitor:
+    # path to Scss directory for monitoring
+    scss_dir:
+        ez2pay/scss
+ 
+compiler:
+    # verbosity of message output
+    verbosity: 2
+ 
+    # compress
+    compress: True
+ 
+    # debug info
+    debug_info: False
+ 
+    # root of static files
+    static_root:
+        ez2pay/static
+ 
+    # directory to output sprite images
+    asset_root:
+        ez2pay/static/asset
+ 
+    # paths to import
+    load_paths: [
+        ez2pay/scss
+    ]
+ 
+    # path of input files and path of file to output
+    scss_files: [
+        [ez2pay/scss/style.scss, ez2pay/static/css/style.css],
+    ]
+ 
+...

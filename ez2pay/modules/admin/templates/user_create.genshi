@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+    <xi:include href="master.genshi" />
+    <xi:include href="../../../templates/widgets/form.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <title>Create user</title>
+</head>
+
+<body>
+
+<h2>Create user</h2>
+
+<a class="btn btn-default" href="${ request.route_url('admin.user_list') }">
+    <i class=" icon-chevron-left"></i> Back to user list
+</a>
+
+${ standard_form(
+    form=form, 
+    action=request.route_url('admin.user_create'), 
+    submit=_('Create')
+) }
+
+</body>
+</html>

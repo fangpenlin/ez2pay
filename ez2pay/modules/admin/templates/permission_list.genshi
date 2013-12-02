@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+    <xi:include href="master.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <title>Permission list</title>
+</head>
+
+<body>
+
+<h2>Permission list</h2>
+
+<a class="btn btn-default" href="${ request.route_url('admin.permission_create') }">
+    <i class="icon-plus"></i>
+    Create permission
+</a>
+
+<table class="table">
+    <thead><tr>
+        <td>Action</td>
+        <td>ID</td>
+        <td>Permission name</td>
+        <td>Description</td>
+    </tr></thead>
+
+    <tbody>
+        <tr py:for="permission in permissions">
+            <td>
+                <a class="btn btn-default" href="${ request.route_url('admin.permission_edit', permission_name=permission.permission_name) }">
+                    <i class="icon-edit"></i> Edit
+                </a>
+            </td>
+            <td>${ permission.permission_id }</td>
+            <td>${ permission.permission_name }</td>
+            <td>${ permission.description }</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

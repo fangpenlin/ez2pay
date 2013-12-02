@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+    <xi:include href="master.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <title>Group list</title>
+</head>
+
+<body>
+
+<h2>Group list</h2>
+
+<a class="btn btn-default" href="${ request.route_url('admin.group_create') }">
+    <i class="icon-plus"></i>
+    Create group
+</a>
+
+<table class="table">
+    <thead><tr>
+        <td>Action</td>
+        <td>ID</td>
+        <td>Group name</td>
+        <td>Display name</td>
+        <td>Created</td>
+    </tr></thead>
+
+    <tbody>
+        <tr py:for="group in groups">
+            <td>
+                <a class="btn btn-default" href="${ request.route_url('admin.group_edit', group_name=group.group_name) }">
+                    <i class="icon-edit"></i> Edit
+                </a>
+            </td>
+            <td>${ group.group_id }</td>
+            <td>${ group.group_name }</td>
+            <td>${ group.display_name }</td>
+            <td>${ group.created }</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

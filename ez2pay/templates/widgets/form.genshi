@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:py="http://genshi.edgewall.org/"
+      py:strip="True">
+      
+<py:def function="form_label(field)">
+    <label class="col-lg-2 control-label" for="${ field.label.field_id }">${ field.label.text }</label>
+</py:def>
+
+<py:def function="field_errors(field)">
+    <span class="field_error" py:for="error in field.errors">
+        <span class="label label-danger">${ error }</span>
+    </span>
+</py:def>
+      
+<py:def function="form_field(field)">
+    <div py:if="field.type != 'HiddenField'" 
+        class="form-group${ ' error' if field.errors else '' }"
+    >
+        ${ form_label(field) }
+        <div class="col-lg-10">
+            ${ field() }
+            ${ field_errors(field) }
+        </div> 
+    </div>
+    <py:if test="field.type == 'HiddenField'">
+        ${ field() }
+    </py:if>
+</py:def>
+
+<py:def function="standard_form(form, action, submit=_('Submit'), method='POST')">
+    <form role="form" class="form-horizontal" action="${ action }" method="${ method }">
+        <py:for each="field in form">
+            <py:if test="field.type != 'HiddenField'">
+                ${ form_field(field) }
+            </py:if>
+        </py:for>
+        
+        <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+                <input name="submit" class="btn btn-default" type="submit" value="${ submit }" />
+            </div>
+        </div>
+        <py:for each="field in form">
+            <py:if test="field.type == 'HiddenField'">
+                ${ form_field(field) }
+            </py:if>
+        </py:for>
+        <input type="hidden" name="csrf_token" value="${ request.session.get_csrf_token() }" />
+    </form>
+</py:def>
+
+</html>

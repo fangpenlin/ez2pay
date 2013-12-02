@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+    <xi:include href="../../../templates/master.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <title>Check your mailbox</title>
+</head>
+
+<body>
+
+<h2>Check your mailbox</h2>
+
+<p>We have already sent you a mail. 
+Please check your mailbox for activation email.
+Click the activation link in the email to activate your account.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+    <xi:include href="../../../templates/master.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <title>Activate</title>
+
+</head>
+
+<body>
+
+<h2>Activate</h2>
+
+<p>Thanks for registration! Your account has been activated.</p>
+
+</body>
+</html>

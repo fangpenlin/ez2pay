@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+    <xi:include href="master.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <title>User list</title>
+</head>
+
+<body>
+
+<h2>User list</h2>
+
+<a class="btn btn-default" href="${ request.route_url('admin.user_create') }">
+    <i class="icon-plus"></i>
+    Create user
+</a>
+
+<table class="table">
+    <thead><tr>
+        <td>Action</td>
+        <td>ID</td>
+        <td>Username</td>
+        <td>Display name</td>
+        <td>Email</td>
+        <td>Created</td>
+    </tr></thead>
+
+    <tbody>
+        <tr py:for="user in users">
+            <td>
+                <a class="btn btn-default" href="${ request.route_url('admin.user_edit', user_name=user.user_name) }">
+                    <i class="icon-edit"></i> Edit
+                </a>
+            </td>
+            <td>${ user.user_id }</td>
+            <td>${ user.user_name }</td>
+            <td>${ user.display_name }</td>
+            <td>${ user.email }</td>
+            <td>${ user.created }</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

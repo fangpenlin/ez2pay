@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+      
+    <xi:include href="../../../templates/master.genshi" />
+    <xi:include href="../../../templates/widgets/form.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <title>Login</title>
+</head>
+
+<body>
+
+<h2>Login</h2>
+
+<form role="form" class="form-horizontal" action="${ request.route_url('account.login') }" method="POST">
+    ${ form_field(form.username_or_email) }
+    ${ form_field(form.password) }
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <input name="submit" class="btn btn-default" type="submit" value="${_('Login')}" />
+            <a href="${ request.route_url('account.forgot_password') }">Forgot password?</a>
+        </div>
+    </div>
+    <input name="came_from" type="hidden" value="${ came_from }" />
+    <input type="hidden" name="csrf_token" value="${ request.session.get_csrf_token() }" />
+</form>
+
+
+</body>
+</html>

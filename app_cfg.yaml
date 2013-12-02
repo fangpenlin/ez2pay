@@ -1,0 +1,23 @@
+﻿---
+
+# authentication secret key
+auth_secret_key: "afbdba150be4c6a93130d557d305eb0899f1e944"
+
+# available languages 
+available_langs:
+    - [en_us, English]
+    - [zh_tw, 繁體中文]
+
+
+# recipients of contact us page
+contact_us:
+    recipients: [
+        recipient@example.com
+    ]
+
+    # CC list of contact us page
+    cc: []
+
+    subject: "ez2pay contacts mail %(short_content)s"
+
+...

@@ -1,0 +1,1822 @@
+# Chinese (Taiwan) translations for ez_comet.web.
+# Copyright (C) 2012 ORGANIZATION
+# This file is distributed under the same license as the ez_comet.web
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ez_comet.web 0.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2012-08-02 17:35+0800\n"
+"PO-Revision-Date: 2012-08-01 00:16+0800\n"
+"Last-Translator: \n"
+"Language-Team: zh_TW <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: helloworld/modules/account/forms.py:15 helloworld/modules/admin/forms.py:92
+msgid "This field is required."
+msgstr "此欄位必填"
+
+#: helloworld/modules/account/forms.py:16 helloworld/modules/admin/forms.py:93
+msgid "Invalid email address."
+msgstr "無效的 email 地址"
+
+#: helloworld/modules/account/forms.py:17 helloworld/modules/admin/forms.py:94
+msgid "Password must match"
+msgstr "密碼必需相符"
+
+#: helloworld/modules/account/forms.py:23
+msgid "Username or Email"
+msgstr "使用者名稱或 email"
+
+#: helloworld/modules/account/forms.py:26 helloworld/modules/admin/forms.py:106
+#: helloworld/modules/admin/forms.py:123
+msgid "Password"
+msgstr "密碼"
+
+#: helloworld/modules/account/views.py:54
+msgid "Wrong username or password"
+msgstr "錯誤的使用者名稱或密碼"
+
+#: helloworld/modules/account/views.py:68
+msgid "Welcome back, ${user_name}"
+msgstr "歡迎回來, ${user_name}"
+
+#: helloworld/modules/account/views.py:105
+msgid "Hope we will see you soon, ${user_name}"
+msgstr "希望很快可以再見到您, ${user_name}"
+
+#: helloworld/modules/account/templates/login.genshi:10
+#: helloworld/modules/account/templates/login.genshi:15
+#: helloworld/modules/account/templates/login.genshi:22
+#: helloworld/templates/master.genshi:87
+msgid "Login"
+msgstr "登入"
+
+#: helloworld/modules/admin/forms.py:38
+#, python-format
+msgid "Invalid field name '%s'."
+msgstr "無效的欄位名稱 '%s'."
+
+#: helloworld/modules/admin/forms.py:96
+msgid "Password is too similar to user name."
+msgstr "密碼與使用者名稱太過相似"
+
+#: helloworld/modules/admin/forms.py:102
+msgid "User name"
+msgstr "使用者名稱"
+
+#: helloworld/modules/admin/forms.py:105 helloworld/modules/admin/forms.py:122
+#: helloworld/modules/admin/forms.py:141 helloworld/modules/admin/forms.py:154
+#: helloworld/modules/admin/templates/group_list.genshi:26
+#: helloworld/modules/admin/templates/user_list.genshi:26
+msgid "Display name"
+msgstr "顯示名稱"
+
+#: helloworld/modules/admin/forms.py:112 helloworld/modules/admin/forms.py:128
+#: helloworld/modules/admin/templates/user_list.genshi:27
+msgid "Email"
+msgstr "Email"
+
+#: helloworld/modules/admin/forms.py:115 helloworld/modules/admin/forms.py:131
+#: helloworld/modules/admin/templates/master.genshi:12
+msgid "Groups"
+msgstr "群組"
+
+#: helloworld/modules/admin/forms.py:138 helloworld/modules/admin/forms.py:151
+#: helloworld/modules/admin/templates/group_list.genshi:25
+msgid "Group name"
+msgstr "群組名稱"
+
+#: helloworld/modules/admin/forms.py:142 helloworld/modules/admin/forms.py:155
+#: helloworld/modules/admin/templates/master.genshi:13
+msgid "Permissions"
+msgstr "權限"
+
+#: helloworld/modules/admin/forms.py:164 helloworld/modules/admin/forms.py:174
+#: helloworld/modules/admin/templates/permission_list.genshi:25
+msgid "Permission name"
+msgstr "權限名稱"
+
+#: helloworld/modules/admin/forms.py:167 helloworld/modules/admin/forms.py:177
+#: helloworld/modules/admin/templates/permission_list.genshi:26
+msgid "Description"
+msgstr "描述"
+
+#: helloworld/modules/admin/views.py:74
+#, python-format
+msgid "Username %s already exists"
+msgstr "使用者名稱 %s 已經存在"
+
+#: helloworld/modules/admin/views.py:80 helloworld/modules/admin/views.py:143
+#, python-format
+msgid "Email %s already exists"
+msgstr "Email %s 已經存在"
+
+#: helloworld/modules/admin/views.py:95
+msgid "User ${user_name} has been created"
+msgstr "使用者 ${user_name} 已被建立"
+
+#: helloworld/modules/admin/views.py:113
+#, python-format
+msgid "User %s does not exists"
+msgstr "使用者 %s 不存在"
+
+#: helloworld/modules/admin/views.py:159
+msgid "User ${user_name} has been updated"
+msgstr "使用者 ${user_name} 已被更新"
+
+#: helloworld/modules/admin/views.py:204 helloworld/modules/admin/views.py:267
+#, python-format
+msgid "Group name %s already exists"
+msgstr "群組名稱 %s 已存在"
+
+#: helloworld/modules/admin/views.py:220
+msgid "Group ${group_name} has been created"
+msgstr "群組 ${group_name} 已被建立"
+
+#: helloworld/modules/admin/views.py:238
+#, python-format
+msgid "Group %s does not exist"
+msgstr "群組 %s 不存在"
+
+#: helloworld/modules/admin/views.py:284
+msgid "Group ${group_name} has been updated"
+msgstr "群組 ${group_name} 已被更新"
+
+#: helloworld/modules/admin/views.py:321 helloworld/modules/admin/views.py:367
+#, python-format
+msgid "Permission name %s already exists"
+msgstr "權限 %s 已存在"
+
+#: helloworld/modules/admin/views.py:333
+msgid "Permission ${permission_name} has been created"
+msgstr "權限 ${permission_name} 已被更新"
+
+#: helloworld/modules/admin/views.py:349
+#, python-format
+msgid "Permission %s does not exist"
+msgstr "權限 %s 不存在"
+
+#: helloworld/modules/admin/views.py:380
+msgid "Permission ${permission_name} has been updated"
+msgstr "權限 ${permission_name} 已被更新"
+
+#: helloworld/modules/admin/templates/group_create.genshi:10
+#: helloworld/modules/admin/templates/group_create.genshi:15
+#: helloworld/modules/admin/templates/group_list.genshi:18
+msgid "Create group"
+msgstr "建立群組"
+
+#: helloworld/modules/admin/templates/group_create.genshi:17
+#: helloworld/modules/admin/templates/group_edit.genshi:17
+msgid "Back to group list"
+msgstr "回到群組列表"
+
+#: helloworld/modules/admin/templates/group_create.genshi:19
+#: helloworld/modules/admin/templates/permission_create.genshi:19
+#: helloworld/modules/admin/templates/user_create.genshi:19
+msgid "Create"
+msgstr "建立"
+
+#: helloworld/modules/admin/templates/group_edit.genshi:10
+#: helloworld/modules/admin/templates/group_edit.genshi:15
+msgid "Edit group"
+msgstr "編輯群組"
+
+#: helloworld/modules/admin/templates/group_edit.genshi:19
+#: helloworld/modules/admin/templates/permission_edit.genshi:19
+#: helloworld/modules/admin/templates/user_edit.genshi:19
+msgid "Modify"
+msgstr "修改"
+
+#: helloworld/modules/admin/templates/group_list.genshi:9
+#: helloworld/modules/admin/templates/group_list.genshi:14
+msgid "Group list"
+msgstr "群組列表"
+
+#: helloworld/modules/admin/templates/group_list.genshi:23
+#: helloworld/modules/admin/templates/permission_list.genshi:23
+#: helloworld/modules/admin/templates/user_list.genshi:23
+msgid "Action"
+msgstr "動作"
+
+#: helloworld/modules/admin/templates/group_list.genshi:24
+#: helloworld/modules/admin/templates/permission_list.genshi:24
+#: helloworld/modules/admin/templates/user_list.genshi:24
+msgid "ID"
+msgstr "ID"
+
+#: helloworld/modules/admin/templates/group_list.genshi:27
+#: helloworld/modules/admin/templates/user_list.genshi:28
+msgid "Created"
+msgstr "建立"
+
+#: helloworld/modules/admin/templates/group_list.genshi:33
+#: helloworld/modules/admin/templates/permission_list.genshi:32
+#: helloworld/modules/admin/templates/user_list.genshi:34
+msgid "Edit"
+msgstr "編輯"
+
+#: helloworld/modules/admin/templates/home.genshi:9
+#: helloworld/modules/admin/templates/home.genshi:14
+#: helloworld/templates/master.genshi:97
+msgid "Admin"
+msgstr "Admin"
+
+#: helloworld/modules/admin/templates/master.genshi:11
+msgid "Users"
+msgstr "使用者"
+
+#: helloworld/modules/admin/templates/permission_create.genshi:10
+#: helloworld/modules/admin/templates/permission_create.genshi:15
+#: helloworld/modules/admin/templates/permission_list.genshi:18
+msgid "Create permission"
+msgstr "建立權限"
+
+#: helloworld/modules/admin/templates/permission_create.genshi:17
+#: helloworld/modules/admin/templates/permission_edit.genshi:17
+msgid "Back to permission list"
+msgstr "回到權限列表"
+
+#: helloworld/modules/admin/templates/permission_edit.genshi:10
+#: helloworld/modules/admin/templates/permission_edit.genshi:15
+msgid "Edit permission"
+msgstr "編輯權限"
+
+#: helloworld/modules/admin/templates/permission_list.genshi:9
+#: helloworld/modules/admin/templates/permission_list.genshi:14
+msgid "Permission list"
+msgstr "權限列表"
+
+#: helloworld/modules/admin/templates/user_create.genshi:10
+#: helloworld/modules/admin/templates/user_create.genshi:15
+#: helloworld/modules/admin/templates/user_list.genshi:18
+msgid "Create user"
+msgstr "建立使用者"
+
+#: helloworld/modules/admin/templates/user_create.genshi:17
+#: helloworld/modules/admin/templates/user_edit.genshi:17
+msgid "Back to user list"
+msgstr "回到使用者列表"
+
+#: helloworld/modules/admin/templates/user_edit.genshi:10
+#: helloworld/modules/admin/templates/user_edit.genshi:15
+msgid "Edit user"
+msgstr "編輯使用者"
+
+#: helloworld/modules/admin/templates/user_list.genshi:9
+#: helloworld/modules/admin/templates/user_list.genshi:14
+msgid "User list"
+msgstr "使用者列表"
+
+#: helloworld/modules/admin/templates/user_list.genshi:25
+msgid "Username"
+msgstr "使用者名稱"
+
+#: helloworld/modules/front/templates/home.genshi:9
+msgid "Hello world"
+msgstr ""
+
+#: helloworld/modules/front/templates/home.genshi:15
+msgid "Heading"
+msgstr ""
+
+#: helloworld/modules/front/templates/home.genshi:16
+msgid "Tagline"
+msgstr ""
+
+#: helloworld/modules/front/templates/home.genshi:18
+msgid "Learn more"
+msgstr ""
+
+#: helloworld/templates/master.genshi:71
+msgid "Helloworld"
+msgstr ""
+
+#: helloworld/templates/master.genshi:74
+msgid "Item1"
+msgstr ""
+
+#: helloworld/templates/master.genshi:77
+msgid "Item2"
+msgstr ""
+
+#: helloworld/templates/master.genshi:80
+msgid "Item3"
+msgstr ""
+
+#: helloworld/templates/master.genshi:92
+msgid "Current user:"
+msgstr "目前使用者:"
+
+#: helloworld/templates/master.genshi:100
+msgid "Logout"
+msgstr "登出"
+
+#: helloworld/templates/master.genshi:130
+msgid "Language:"
+msgstr "語言"
+
+#~ msgid ""
+#~ "Can only contain alphabets, numbers and"
+#~ " underscores, for example \"john_1987\""
+#~ msgstr "只能包含英文字母、數字和底線，例如 \"john_1987\""
+
+#~ msgid "You must accept the Terms of Service to complete registration"
+#~ msgstr "您必需接受使用者條款以完成註冊"
+
+#~ msgid "Email must match"
+#~ msgstr "Email必需相符"
+
+#~ msgid "Confirm Email"
+#~ msgstr "確認 email"
+
+#~ msgid "EZComet.com account activation"
+#~ msgstr "EZComet.com 帳號啟用"
+
+#~ msgid "User ${user_name} has been registered"
+#~ msgstr "使用者 ${user_name} 已成功註冊"
+
+#~ msgid "Invalid activation link"
+#~ msgstr "無效的啟用連結"
+
+#~ msgid "User ${user_name} is activated"
+#~ msgstr "使用者 ${user_name} 已被啟用"
+
+#~ msgid "Activate"
+#~ msgstr "啟用"
+
+#~ msgid "Thanks for registration! Your account has been activated, go to your"
+#~ msgstr "感謝您註冊! 您的帳號已被啟用，請到您的"
+
+#~ msgid "service page"
+#~ msgstr "服務頁面"
+
+#~ msgid "to get free API key"
+#~ msgstr "取得免費的API key"
+
+#~ msgid "Check your mailbox"
+#~ msgstr "檢查您的信箱"
+
+#~ msgid ""
+#~ "We have already sent you a mail. \n"
+#~ "Please check your mailbox for activation email.\n"
+#~ "Click the activation link in the email to activate your account."
+#~ msgstr "我們已經寄了一封信給您，請檢查您的信箱並找到啟用信件，點擊啟用連結以啟用您的帳號"
+
+#~ msgid "Register"
+#~ msgstr "註冊"
+
+#~ msgid "I have read and agree to the"
+#~ msgstr "我已閱讀並且同意"
+
+#~ msgid "Terms of Service"
+#~ msgstr "使用者條款"
+
+#~ msgid "Failed to write msg (%s)"
+#~ msgstr "無法寫入訊息 (%s)"
+
+#~ msgid "Simple chatroom"
+#~ msgstr "簡易聊天室"
+
+#~ msgid ""
+#~ "Everybody loves web-based chatroom, yes"
+#~ " they do. But do developers like "
+#~ "chatroom? \n"
+#~ "        I mean, to build one. It"
+#~ " is difficult and very tricky to "
+#~ "deal with message pushing issues. \n"
+#~ "        With EZComet, it couldn't be easier ever. Let's see the demo:"
+#~ msgstr ""
+#~ "所有人都喜歡網頁聊天室，是的，但是開發者喜歡聊天室嗎? 我是指，打造一個聊天室，事實上那會是困難且不好處理訊息推送的問題，有了"
+#~ " EZComet ，再也不能更簡單了，讓我們看看示範:"
+
+#~ msgid "Chatroom msgs:"
+#~ msgstr "聊天室訊息:"
+
+#~ msgid "Submit"
+#~ msgstr "送出"
+
+#~ msgid "Server side code"
+#~ msgstr "伺服器端程式碼"
+
+#~ msgid ""
+#~ "Yes, I can hear you \"this is "
+#~ "insane easy!\". Of course it is, "
+#~ "this is what\n"
+#~ "        we do hardly for you. Make"
+#~ " building a realtime web application "
+#~ "become a delightful task.\n"
+#~ "        Following is the server side code."
+#~ msgstr ""
+#~ "是的，我可以聽見你說 \"這真是有病的簡單\" "
+#~ "，當然是這樣，這就是我們努力為您所做的，讓建立一個即時網頁應用程式變成一件愉快的工作，下列為伺服端程式碼"
+
+#~ msgid "PHP"
+#~ msgstr "PHP"
+
+#~ msgid "Python"
+#~ msgstr "Python"
+
+#~ msgid ""
+#~ "&lt;?php\n"
+#~ "\n"
+#~ "/**\n"
+#~ "    This function pushs message to ezcomet.com\n"
+#~ "**/\n"
+#~ "function push_msg($api_key, $user_name, $channel, $msg){\n"
+#~ "    $ch = curl_init();\n"
+#~ "    curl_setopt($ch, CURLOPT_URL,'http://api.ezcomet.com/write');\n"
+#~ "    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);\n"
+#~ "    curl_setopt($ch, CURLOPT_TIMEOUT, 10);\n"
+#~ "    curl_setopt($ch, CURLOPT_POST, true);\n"
+#~ "    $data = array(\n"
+#~ "        'qname' => \"$user_name-$channel\",\n"
+#~ "        'api_key' => $api_key,\n"
+#~ "        'msg' => $msg\n"
+#~ "    );\n"
+#~ "    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);\n"
+#~ "    $result = curl_exec($ch);\n"
+#~ "    $result = @json_decode($result , TRUE);\n"
+#~ "    curl_close($ch);\n"
+#~ "    \n"
+#~ "    if( $result === FALSE || $result['code'] !== 'ok') {\n"
+#~ "        $msg = $result['msg'];\n"
+#~ "        throw new Exception(\"Failed to push message: $msg\");\n"
+#~ "    }\n"
+#~ "    return $result['tick'];\n"
+#~ "}\n"
+#~ "\n"
+#~ "$username = $_POST['username'];\n"
+#~ "$message = $_POST['message'];\n"
+#~ "$msg = array(\n"
+#~ "    'username' => $username,\n"
+#~ "    'message' => $message\n"
+#~ ");\n"
+#~ "\n"
+#~ "$tick = push_msg('your api key', 'demo',"
+#~ " 'chatroom', @json_encode($msg));\n"
+#~ "echo \"tick: $tick\";\n"
+#~ "\n"
+#~ "?&gt;"
+#~ msgstr ""
+#~ "&lt;?php\n"
+#~ "\n"
+#~ "/**\n"
+#~ "    This function pushs message to ezcomet.com\n"
+#~ "**/\n"
+#~ "function push_msg($api_key, $user_name, $channel, $msg){\n"
+#~ "    $ch = curl_init();\n"
+#~ "    curl_setopt($ch, CURLOPT_URL,'http://api.ezcomet.com/write');\n"
+#~ "    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);\n"
+#~ "    curl_setopt($ch, CURLOPT_TIMEOUT, 10);\n"
+#~ "    curl_setopt($ch, CURLOPT_POST, true);\n"
+#~ "    $data = array(\n"
+#~ "        'qname' => \"$user_name-$channel\",\n"
+#~ "        'api_key' => $api_key,\n"
+#~ "        'msg' => $msg\n"
+#~ "    );\n"
+#~ "    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);\n"
+#~ "    $result = curl_exec($ch);\n"
+#~ "    $result = @json_decode($result , TRUE);\n"
+#~ "    curl_close($ch);\n"
+#~ "    \n"
+#~ "    if( $result === FALSE || $result['code'] !== 'ok') {\n"
+#~ "        $msg = $result['msg'];\n"
+#~ "        throw new Exception(\"Failed to push message: $msg\");\n"
+#~ "    }\n"
+#~ "    return $result['tick'];\n"
+#~ "}\n"
+#~ "\n"
+#~ "$username = $_POST['username'];\n"
+#~ "$message = $_POST['message'];\n"
+#~ "$msg = array(\n"
+#~ "    'username' => $username,\n"
+#~ "    'message' => $message\n"
+#~ ");\n"
+#~ "\n"
+#~ "$tick = push_msg('your api key', 'demo',"
+#~ " 'chatroom', @json_encode($msg));\n"
+#~ "echo \"tick: $tick\";\n"
+#~ "\n"
+#~ "?&gt;"
+
+#~ msgid ""
+#~ "# this is a Pyramid web framework view\n"
+#~ "@view_config(route_name='demo.chatroom', \n"
+#~ "             renderer='templates/chatroom.genshi')\n"
+#~ "def chatroom(request):\n"
+#~ "    import json\n"
+#~ "    import urllib\n"
+#~ "    import httplib2\n"
+#~ "    if request.method == 'POST':\n"
+#~ "        username = request.params['username']\n"
+#~ "        message = request.params['message']\n"
+#~ "        msg = json.dumps(dict(username=username, message=message))\n"
+#~ "        \n"
+#~ "        api_key = 'your api key'\n"
+#~ "        conn = httplib2.Http()\n"
+#~ "        args = dict(\n"
+#~ "            qname='demo-chatroom',\n"
+#~ "            msg=msg.encode('utf8'),\n"
+#~ "            api_key=api_key\n"
+#~ "        )\n"
+#~ "        query = urllib.urlencode(args)\n"
+#~ "        url = 'http://api.ezcomet.com/write' + '?' + query\n"
+#~ "        resp, content = conn.request(url)\n"
+#~ "        return Response(body=content)\n"
+#~ "    return dict()"
+#~ msgstr ""
+#~ "# this is a Pyramid web framework view\n"
+#~ "@view_config(route_name='demo.chatroom', \n"
+#~ "             renderer='templates/chatroom.genshi')\n"
+#~ "def chatroom(request):\n"
+#~ "    import json\n"
+#~ "    import urllib\n"
+#~ "    import httplib2\n"
+#~ "    if request.method == 'POST':\n"
+#~ "        username = request.params['username']\n"
+#~ "        message = request.params['message']\n"
+#~ "        msg = json.dumps(dict(username=username, message=message))\n"
+#~ "        \n"
+#~ "        api_key = 'your api key'\n"
+#~ "        conn = httplib2.Http()\n"
+#~ "        args = dict(\n"
+#~ "            qname='demo-chatroom',\n"
+#~ "            msg=msg.encode('utf8'),\n"
+#~ "            api_key=api_key\n"
+#~ "        )\n"
+#~ "        query = urllib.urlencode(args)\n"
+#~ "        url = 'http://api.ezcomet.com/write' + '?' + query\n"
+#~ "        resp, content = conn.request(url)\n"
+#~ "        return Response(body=content)\n"
+#~ "    return dict()"
+
+#~ msgid "Javscript code"
+#~ msgstr "Javascript 程式"
+
+#~ msgid ""
+#~ "Still, all you have to do for "
+#~ "message pulling is to call our "
+#~ "javascript API. We add two extra\n"
+#~ "        arguments here. We set "
+#~ "\"auto_tick\" to false to make it "
+#~ "not to store\n"
+#~ "        the latest \"tick\" in cookie"
+#~ " for you. Therefore, everytime you "
+#~ "refresh the\n"
+#~ "        page, you can read all messages in the queue."
+#~ msgstr ""
+#~ "一樣的，您所需要為訊息讀取所做的事就只有呼叫我們的 javascript "
+#~ "API，我們在此加入了兩個額外的參數，我們設定 \"auto_tick\" 為 false "
+#~ "以讓它不要儲存最新的 \"tick\" 在 cookie "
+#~ "中，因此，每次重新整理頁面，您依然可以讀到所有在 queue 中的訊息"
+
+#~ msgid ""
+#~ "We also set \"msg_type\" to \"json\" "
+#~ "in order to make it decode message"
+#~ "\n"
+#~ "        as json for us."
+#~ msgstr "我們也將 \"msg_type\" 設為 \"json\" 以讓它幫我們解碼訊息為 json"
+
+#~ msgid ""
+#~ "&lt;script&gt;\n"
+#~ "        var set_name = false;\n"
+#~ "        \n"
+#~ "        function strip_msgs () {\n"
+#~ "            var lis = $('#msgs li');\n"
+#~ "            var limit = 15;\n"
+#~ "            var total = lis.length;\n"
+#~ "            var extra = total - limit;\n"
+#~ "            var i;\n"
+#~ "            for(i = 0; i &lt; extra; ++i) {\n"
+#~ "                $(lis[0]).remove();\n"
+#~ "            }\n"
+#~ "        }\n"
+#~ "    \n"
+#~ "        function on_submit() {\n"
+#~ "            console.log($(this).serialize());\n"
+#~ "            $.post(this.action, $(this).serialize());\n"
+#~ "            if(!set_name) {\n"
+#~ "                var username = $('#username').val();\n"
+#~ "                $('#username').hide().after('&lt;strong&gt;' "
+#~ "+ username + ': &lt;/strong&gt;');\n"
+#~ "                set_name = true;\n"
+#~ "            }\n"
+#~ "            $('#message').val('');\n"
+#~ "            return false;\n"
+#~ "        }\n"
+#~ "        \n"
+#~ "        function escape_html(text) {\n"
+#~ "            return "
+#~ "text.replace(/&amp;/g,'&amp;').replace(/&lt;/g,'&amp;lt;').replace(/&gt;/g,'&amp;gt;');"
+#~ "\n"
+#~ "        }\n"
+#~ "    \n"
+#~ "        window.onload = function() {\n"
+#~ "            function callback(record) {\n"
+#~ "                var li = '&lt;li&gt;' +\n"
+#~ "                    '&lt;strong&gt;' + "
+#~ "escape_html(record.username) + ': &lt;/strong&gt;'"
+#~ " + \n"
+#~ "                    escape_html(record.message) +\n"
+#~ "                '&lt;/li&gt;';\n"
+#~ "                  \n"
+#~ "                $('#msgs').append(li);\n"
+#~ "                strip_msgs();\n"
+#~ "            }\n"
+#~ "            $('#chat-form').submit(on_submit);\n"
+#~ "            ez_comet.subscribe({\n"
+#~ "                user_name: 'demo', \n"
+#~ "                channel: 'chatroom', \n"
+#~ "                callback: callback,\n"
+#~ "                auto_tick: false,\n"
+#~ "                msg_type: 'json'\n"
+#~ "            });\n"
+#~ "        };\n"
+#~ "    &lt;/script&gt;"
+#~ msgstr ""
+#~ "&lt;script&gt;\n"
+#~ "        var set_name = false;\n"
+#~ "        \n"
+#~ "        function strip_msgs () {\n"
+#~ "            var lis = $('#msgs li');\n"
+#~ "            var limit = 15;\n"
+#~ "            var total = lis.length;\n"
+#~ "            var extra = total - limit;\n"
+#~ "            var i;\n"
+#~ "            for(i = 0; i &lt; extra; ++i) {\n"
+#~ "                $(lis[0]).remove();\n"
+#~ "            }\n"
+#~ "        }\n"
+#~ "    \n"
+#~ "        function on_submit() {\n"
+#~ "            console.log($(this).serialize());\n"
+#~ "            $.post(this.action, $(this).serialize());\n"
+#~ "            if(!set_name) {\n"
+#~ "                var username = $('#username').val();\n"
+#~ "                $('#username').hide().after('&lt;strong&gt;' "
+#~ "+ username + ': &lt;/strong&gt;');\n"
+#~ "                set_name = true;\n"
+#~ "            }\n"
+#~ "            $('#message').val('');\n"
+#~ "            return false;\n"
+#~ "        }\n"
+#~ "        \n"
+#~ "        function escape_html(text) {\n"
+#~ "            return "
+#~ "text.replace(/&amp;/g,'&amp;').replace(/&lt;/g,'&amp;lt;').replace(/&gt;/g,'&amp;gt;');"
+#~ "\n"
+#~ "        }\n"
+#~ "    \n"
+#~ "        window.onload = function() {\n"
+#~ "            function callback(record) {\n"
+#~ "                var li = '&lt;li&gt;' +\n"
+#~ "                    '&lt;strong&gt;' + "
+#~ "escape_html(record.username) + ': &lt;/strong&gt;'"
+#~ " + \n"
+#~ "                    escape_html(record.message) +\n"
+#~ "                '&lt;/li&gt;';\n"
+#~ "                  \n"
+#~ "                $('#msgs').append(li);\n"
+#~ "                strip_msgs();\n"
+#~ "            }\n"
+#~ "            $('#chat-form').submit(on_submit);\n"
+#~ "            ez_comet.subscribe({\n"
+#~ "                user_name: 'demo', \n"
+#~ "                channel: 'chatroom', \n"
+#~ "                callback: callback,\n"
+#~ "                auto_tick: false,\n"
+#~ "                msg_type: 'json'\n"
+#~ "            });\n"
+#~ "        };\n"
+#~ "    &lt;/script&gt;"
+
+#~ msgid "CPU usage realtime update example"
+#~ msgstr "CPU 使用率即時更新範例"
+
+#~ msgid ""
+#~ "System information monitoring is a common task in IT world. \n"
+#~ "        It is important to let "
+#~ "staff monitor system status in realtime"
+#~ " on the web-site. \n"
+#~ "        Following example shows how to"
+#~ " use EZComet.com to monitor the CPU"
+#~ " usage of our machine."
+#~ msgstr ""
+#~ "系統資訊監控一直是IT世界裡的常見工作，能夠在網頁上即時監看系統狀態是一件很重要的事，下列範例展示如何用 EZComet.com"
+#~ " 來監視我們主機的 CPU 使用率"
+
+#~ msgid "Current CPU usage of node001.ezcomet.com:"
+#~ msgstr "目前 node001.ezcomet.com 的 CPU 使用率:"
+
+#~ msgid "Usage: 0"
+#~ msgstr "Usage: 0"
+
+#~ msgid "CPU usage monitor script"
+#~ msgstr "CPU 使用率監視 script"
+
+#~ msgid ""
+#~ "Following Python script monitors CPU "
+#~ "usage and push message to channel "
+#~ "\"cpu.usage\" of user \"demo\" on "
+#~ "EZComet.com"
+#~ msgstr ""
+#~ "以下 Python script 監視 CPU 使用率並且推送到使用者 "
+#~ "\"demo\" 的頻道 \"cpu.usage\" 在 EZComet.com "
+#~ "上"
+
+#~ msgid ""
+#~ "import json\n"
+#~ "import urllib\n"
+#~ "import logging\n"
+#~ "\n"
+#~ "# endpoint of ezcomet\n"
+#~ "ENDPOINT = 'http://api.ezcomet.com/write'\n"
+#~ "\n"
+#~ "# CPU jiffer data of last update\n"
+#~ "last_update = {}\n"
+#~ "\n"
+#~ "def read_cpu():\n"
+#~ "    rows = {}\n"
+#~ "    f = open('/proc/stat')\n"
+#~ "    for line in f.readlines():\n"
+#~ "        parts = line.split()\n"
+#~ "        rows[parts[0]] = map(int, parts[1:])\n"
+#~ "    f.close()\n"
+#~ "    return rows['cpu']\n"
+#~ "\n"
+#~ "def update_cpu():\n"
+#~ "    \"\"\"Update CPU usage\n"
+#~ "\n"
+#~ "    \"\"\"\n"
+#~ "    cpu_info = read_cpu()\n"
+#~ "    usage = 0\n"
+#~ "    total = sum(cpu_info)\n"
+#~ "    idle = cpu_info[3]\n"
+#~ "    if last_update:\n"
+#~ "        last_total = last_update['total']\n"
+#~ "        last_idle = last_update['idle']\n"
+#~ "        total_delta = total - last_total\n"
+#~ "        idle_delta = idle - last_idle\n"
+#~ "        usage = 1 - (idle_delta/float(total_delta))\n"
+#~ "    last_update['total'] = total\n"
+#~ "    last_update['idle'] = idle\n"
+#~ "    return usage\n"
+#~ "\n"
+#~ "def push_msg(api_key, user_name, channel, msg):\n"
+#~ "    \"\"\"Push message to ezcomet.com\n"
+#~ "\n"
+#~ "    \"\"\"\n"
+#~ "    qname = user_name + '-' + channel\n"
+#~ "    query = dict(api_key=api_key, qname=qname,"
+#~ " channel=channel, msg=msg)\n"
+#~ "    url = ENDPOINT + '?' + urllib.urlencode(query)\n"
+#~ "    f = urllib.urlopen(url)\n"
+#~ "    result = f.read()\n"
+#~ "    f.close()\n"
+#~ "    data = json.loads(result)\n"
+#~ "    if data['code'] != 'ok':\n"
+#~ "        raise RuntimeError('Failed to push "
+#~ "message: %s' % data['msg'])\n"
+#~ "\n"
+#~ "def main():\n"
+#~ "    logger = logging.getLogger('cpu_usage')\n"
+#~ "    while True:\n"
+#~ "        time.sleep(5)\n"
+#~ "        cpu_usage = update_cpu()\n"
+#~ "        push_msg(\n"
+#~ "            api_key=raw_input('API_KEY:'), \n"
+#~ "            user_name='demo', \n"
+#~ "            channel='cpu.usage', \n"
+#~ "            msg=cpu_usage\n"
+#~ "        )\n"
+#~ "        logger.info('Update CPU usage %s', cpu_usage)\n"
+#~ "        \n"
+#~ "if __name__ == '__main__':\n"
+#~ "    logging.basicConfig(level=logging.INFO)\n"
+#~ "    main()"
+#~ msgstr ""
+#~ "import json\n"
+#~ "import urllib\n"
+#~ "import logging\n"
+#~ "\n"
+#~ "# endpoint of ezcomet\n"
+#~ "ENDPOINT = 'http://api.ezcomet.com/write'\n"
+#~ "\n"
+#~ "# CPU jiffer data of last update\n"
+#~ "last_update = {}\n"
+#~ "\n"
+#~ "def read_cpu():\n"
+#~ "    rows = {}\n"
+#~ "    f = open('/proc/stat')\n"
+#~ "    for line in f.readlines():\n"
+#~ "        parts = line.split()\n"
+#~ "        rows[parts[0]] = map(int, parts[1:])\n"
+#~ "    f.close()\n"
+#~ "    return rows['cpu']\n"
+#~ "\n"
+#~ "def update_cpu():\n"
+#~ "    \"\"\"Update CPU usage\n"
+#~ "\n"
+#~ "    \"\"\"\n"
+#~ "    cpu_info = read_cpu()\n"
+#~ "    usage = 0\n"
+#~ "    total = sum(cpu_info)\n"
+#~ "    idle = cpu_info[3]\n"
+#~ "    if last_update:\n"
+#~ "        last_total = last_update['total']\n"
+#~ "        last_idle = last_update['idle']\n"
+#~ "        total_delta = total - last_total\n"
+#~ "        idle_delta = idle - last_idle\n"
+#~ "        usage = 1 - (idle_delta/float(total_delta))\n"
+#~ "    last_update['total'] = total\n"
+#~ "    last_update['idle'] = idle\n"
+#~ "    return usage\n"
+#~ "\n"
+#~ "def push_msg(api_key, user_name, channel, msg):\n"
+#~ "    \"\"\"Push message to ezcomet.com\n"
+#~ "\n"
+#~ "    \"\"\"\n"
+#~ "    qname = user_name + '-' + channel\n"
+#~ "    query = dict(api_key=api_key, qname=qname,"
+#~ " channel=channel, msg=msg)\n"
+#~ "    url = ENDPOINT + '?' + urllib.urlencode(query)\n"
+#~ "    f = urllib.urlopen(url)\n"
+#~ "    result = f.read()\n"
+#~ "    f.close()\n"
+#~ "    data = json.loads(result)\n"
+#~ "    if data['code'] != 'ok':\n"
+#~ "        raise RuntimeError('Failed to push "
+#~ "message: %s' % data['msg'])\n"
+#~ "\n"
+#~ "def main():\n"
+#~ "    logger = logging.getLogger('cpu_usage')\n"
+#~ "    while True:\n"
+#~ "        time.sleep(5)\n"
+#~ "        cpu_usage = update_cpu()\n"
+#~ "        push_msg(\n"
+#~ "            api_key=raw_input('API_KEY:'), \n"
+#~ "            user_name='demo', \n"
+#~ "            channel='cpu.usage', \n"
+#~ "            msg=cpu_usage\n"
+#~ "        )\n"
+#~ "        logger.info('Update CPU usage %s', cpu_usage)\n"
+#~ "        \n"
+#~ "if __name__ == '__main__':\n"
+#~ "    logging.basicConfig(level=logging.INFO)\n"
+#~ "    main()"
+
+#~ msgid "Javascript code"
+#~ msgstr "Javascript 程式"
+
+#~ msgid ""
+#~ "Following Javsscript subscribes to channel "
+#~ "\"cpu.usage\" of user \"demo\", update "
+#~ "web UI when there is new message."
+#~ msgstr "以下 Javascript 訂閱 使用者 \"demo\" 的頻道 \"cpu.usage\" ，並在有新訊息時更新網頁U "
+
+#~ msgid ""
+#~ "&lt;script&gt;\n"
+#~ "    window.onload = function() {\n"
+#~ "        function callback(msg) {\n"
+#~ "            var usage = Math.round(parseFloat(msg)*100*100)/100;\n"
+#~ "            console.log(usage);\n"
+#~ "            document.getElementById('usage-"
+#~ "text').innerHTML = 'Usage:' + usage +"
+#~ " '%';\n"
+#~ "            document.getElementById('usage-"
+#~ "bar').style.width = usage + '%';\n"
+#~ "        }\n"
+#~ "        ez_comet.subscribe({\n"
+#~ "            user_name: 'demo', \n"
+#~ "            channel: 'cpu.usage', \n"
+#~ "            callback: callback,\n"
+#~ "            auto_tick: false\n"
+#~ "        });\n"
+#~ "    };\n"
+#~ "&lt;/script&gt;"
+#~ msgstr ""
+#~ "&lt;script&gt;\n"
+#~ "    window.onload = function() {\n"
+#~ "        function callback(msg) {\n"
+#~ "            var usage = Math.round(parseFloat(msg)*100*100)/100;\n"
+#~ "            console.log(usage);\n"
+#~ "            document.getElementById('usage-"
+#~ "text').innerHTML = 'Usage:' + usage +"
+#~ " '%';\n"
+#~ "            document.getElementById('usage-"
+#~ "bar').style.width = usage + '%';\n"
+#~ "        }\n"
+#~ "        ez_comet.subscribe({\n"
+#~ "            user_name: 'demo', \n"
+#~ "            channel: 'cpu.usage', \n"
+#~ "            callback: callback,\n"
+#~ "            auto_tick: false\n"
+#~ "        });\n"
+#~ "    };\n"
+#~ "&lt;/script&gt;"
+
+#~ msgid "Log record realtime update example"
+#~ msgstr "記錄檔即時更新範例"
+
+#~ msgid ""
+#~ "Sometimes, you need to monitor a "
+#~ "log file, but it is annoying to"
+#~ " use a shell tool. \n"
+#~ "        How wonderful it is if you"
+#~ " can monitor the log record on "
+#~ "web page? \n"
+#~ "        Here we show you how to achieve that with EZComet."
+#~ msgstr "有時，你需要監視某個記錄檔，但使用 shell 工具很麻煩，如果能在網頁上面達成不是很棒嗎? 在這我們示範如何用 EZComet 達成"
+
+#~ msgid "Log record messages received from CPU usage demo process:"
+#~ msgstr "記錄檔訊息接收來自 CPU 使用率的示範程式: "
+
+#~ msgid "Log file reading script"
+#~ msgstr "記錄檔讀取 script"
+
+#~ msgid ""
+#~ "Following Python script reads tail line"
+#~ " of a file and push message to"
+#~ " channel \"log.update\" of user \"demo\""
+#~ " on EZComet.com"
+#~ msgstr ""
+#~ "下列 Python script 讀取檔尾行並推送訊息到使用者 \"demo\" "
+#~ "的頻道 \"log.update\" 在 EZComet.com 上"
+
+#~ msgid ""
+#~ "import os\n"
+#~ "import json\n"
+#~ "import urllib\n"
+#~ "import time\n"
+#~ "import sys\n"
+#~ "\n"
+#~ "# endpoint of ezcomet\n"
+#~ "ENDPOINT = 'http://api.ezcomet.com/write'\n"
+#~ "\n"
+#~ "def push_msg(api_key, user_name, channel, msg):\n"
+#~ "    \"\"\"Push message to ezcomet.com\n"
+#~ "\n"
+#~ "    \"\"\"\n"
+#~ "    qname = user_name + '-' + channel\n"
+#~ "    query = dict(api_key=api_key, qname=qname,"
+#~ " channel=channel, msg=msg)\n"
+#~ "    url = ENDPOINT + '?' + urllib.urlencode(query)\n"
+#~ "    f = urllib.urlopen(url)\n"
+#~ "    result = f.read()\n"
+#~ "    f.close()\n"
+#~ "    data = json.loads(result)\n"
+#~ "    if data['code'] != 'ok':\n"
+#~ "        raise RuntimeError('Failed to push "
+#~ "message: %s' % data['msg'])\n"
+#~ "\n"
+#~ "def read_log(path):\n"
+#~ "    f = open(path, 'rt')\n"
+#~ "    f.seek(0, os.SEEK_END)\n"
+#~ "    while True:\n"
+#~ "        pos = f.tell()\n"
+#~ "        line = f.readline()\n"
+#~ "        if line:\n"
+#~ "            print line.strip()\n"
+#~ "            push_msg(\n"
+#~ "                api_key=raw_input('API_KEY':),\n"
+#~ "                user_name='demo',\n"
+#~ "                channel='log.update',\n"
+#~ "                msg=line.strip()\n"
+#~ "            )\n"
+#~ "        else:\n"
+#~ "            f.seek(pos)\n"
+#~ "            time.sleep(1)\n"
+#~ "\n"
+#~ "def main():\n"
+#~ "    read_log(sys.argv[1])\n"
+#~ "\n"
+#~ "if __name__ == '__main__':\n"
+#~ "    main()"
+#~ msgstr ""
+#~ "import os\n"
+#~ "import json\n"
+#~ "import urllib\n"
+#~ "import time\n"
+#~ "import sys\n"
+#~ "\n"
+#~ "# endpoint of ezcomet\n"
+#~ "ENDPOINT = 'http://api.ezcomet.com/write'\n"
+#~ "\n"
+#~ "def push_msg(api_key, user_name, channel, msg):\n"
+#~ "    \"\"\"Push message to ezcomet.com\n"
+#~ "\n"
+#~ "    \"\"\"\n"
+#~ "    qname = user_name + '-' + channel\n"
+#~ "    query = dict(api_key=api_key, qname=qname,"
+#~ " channel=channel, msg=msg)\n"
+#~ "    url = ENDPOINT + '?' + urllib.urlencode(query)\n"
+#~ "    f = urllib.urlopen(url)\n"
+#~ "    result = f.read()\n"
+#~ "    f.close()\n"
+#~ "    data = json.loads(result)\n"
+#~ "    if data['code'] != 'ok':\n"
+#~ "        raise RuntimeError('Failed to push "
+#~ "message: %s' % data['msg'])\n"
+#~ "\n"
+#~ "def read_log(path):\n"
+#~ "    f = open(path, 'rt')\n"
+#~ "    f.seek(0, os.SEEK_END)\n"
+#~ "    while True:\n"
+#~ "        pos = f.tell()\n"
+#~ "        line = f.readline()\n"
+#~ "        if line:\n"
+#~ "            print line.strip()\n"
+#~ "            push_msg(\n"
+#~ "                api_key=raw_input('API_KEY':),\n"
+#~ "                user_name='demo',\n"
+#~ "                channel='log.update',\n"
+#~ "                msg=line.strip()\n"
+#~ "            )\n"
+#~ "        else:\n"
+#~ "            f.seek(pos)\n"
+#~ "            time.sleep(1)\n"
+#~ "\n"
+#~ "def main():\n"
+#~ "    read_log(sys.argv[1])\n"
+#~ "\n"
+#~ "if __name__ == '__main__':\n"
+#~ "    main()"
+
+#~ msgid ""
+#~ "Following Javsscript subscribes to channel "
+#~ "\"log.update\" of user \"demo\", update "
+#~ "web UI when there is new message."
+#~ msgstr "以下 Javascript 訂閱使用者 \"demo\" 的  \"log.update\"  頻道，並在有新訊息時更新網頁UI"
+
+#~ msgid ""
+#~ "&lt;script&gt;\n"
+#~ "    function escape_html() {\n"
+#~ "        return "
+#~ "this.replace(/&amp;/g,'&amp;amp;').replace(/&lt;/g,'&amp;lt;').replace(/&gt;/g,'&amp;gt;');"
+#~ "\n"
+#~ "    }\n"
+#~ "\n"
+#~ "    window.onload = function() {\n"
+#~ "        function callback(msg) {\n"
+#~ "            var li = document.createElement('li');\n"
+#~ "            li.innerHTML = escape_html(msg);\n"
+#~ "            \n"
+#~ "            document.getElementById('msgs').appendChild(li);\n"
+#~ "        }\n"
+#~ "        ez_comet.subscribe({\n"
+#~ "            user_name: 'demo', \n"
+#~ "            channel: 'log.update', \n"
+#~ "            callback: callback,\n"
+#~ "            auto_tick: false\n"
+#~ "        });\n"
+#~ "    };\n"
+#~ "&lt;/script&gt;"
+#~ msgstr ""
+#~ "&lt;script&gt;\n"
+#~ "    function escape_html() {\n"
+#~ "        return "
+#~ "this.replace(/&amp;/g,'&amp;amp;').replace(/&lt;/g,'&amp;lt;').replace(/&gt;/g,'&amp;gt;');"
+#~ "\n"
+#~ "    }\n"
+#~ "\n"
+#~ "    window.onload = function() {\n"
+#~ "        function callback(msg) {\n"
+#~ "            var li = document.createElement('li');\n"
+#~ "            li.innerHTML = escape_html(msg);\n"
+#~ "            \n"
+#~ "            document.getElementById('msgs').appendChild(li);\n"
+#~ "        }\n"
+#~ "        ez_comet.subscribe({\n"
+#~ "            user_name: 'demo', \n"
+#~ "            channel: 'log.update', \n"
+#~ "            callback: callback,\n"
+#~ "            auto_tick: false\n"
+#~ "        });\n"
+#~ "    };\n"
+#~ "&lt;/script&gt;"
+
+#~ msgid "Demo"
+#~ msgstr "示範"
+
+#~ msgid "Simple receive"
+#~ msgstr "簡易接收"
+
+#~ msgid "CPU usage realtime update"
+#~ msgstr "CPU使用率即時更新"
+
+#~ msgid "Log record realtime update"
+#~ msgstr "記錄檔即時更新"
+
+#~ msgid "Push"
+#~ msgstr "推送"
+
+#~ msgid "Tips:"
+#~ msgstr "提示:"
+
+#~ msgid ""
+#~ "You can push messages to same "
+#~ "channel from different browsers, different "
+#~ "computer, even from your mobile phone."
+#~ "\n"
+#~ "        Just open the URL"
+#~ msgstr "您可以從不同的瀏覽器、電腦、甚至手機推送訊息到同樣頻道，只要開啟網址"
+
+#~ msgid "Receive"
+#~ msgstr "接收"
+
+#~ msgid "You can also"
+#~ msgstr "您可以"
+
+#~ msgid "register"
+#~ msgstr "註冊"
+
+#~ msgid "and get a free API key, then use"
+#~ msgstr "並取得免費的API key，然後使用"
+
+#~ msgid "read channel"
+#~ msgstr "讀取頻道"
+
+#~ msgid "and"
+#~ msgstr "和"
+
+#~ msgid "write channel"
+#~ msgstr "寫入頻道"
+
+#~ msgid "tools to play."
+#~ msgstr "工具來玩玩"
+
+#~ msgid "Push message here"
+#~ msgstr "推送訊息到此頁"
+
+#~ msgid "Ajax/Comet messages received from EZComet:"
+#~ msgstr "從 EZComet 接收到的 Ajax/Comet 訊息 :"
+
+#~ msgid "Email address"
+#~ msgstr "Email 地址"
+
+#~ msgid "Content"
+#~ msgstr "內容"
+
+#~ msgid "Failed to send message"
+#~ msgstr "無法傳送訊息"
+
+#~ msgid "We have received your message, thank you"
+#~ msgstr "我們已收到您的訊息，感謝您"
+
+#~ msgid "Contact us"
+#~ msgstr "聯絡我們"
+
+#~ msgid "If you have any idea or question, fell free to contact us :D"
+#~ msgstr "如果您有任何想法或問題，歡迎來信 :D"
+
+#~ msgid "Send"
+#~ msgstr "傳送"
+
+#~ msgid "Home"
+#~ msgstr "首頁"
+
+#~ msgid "EZComet"
+#~ msgstr "EZComet"
+
+#~ msgid "The best Ajax/Comet solution. It just works! See the"
+#~ msgstr "最棒的 Ajax/Comet 解決方案, 它就是這樣地順暢運行! 請看"
+
+#~ msgid "demo"
+#~ msgstr "示範"
+
+#~ msgid "Good news. We provide free API key now!"
+#~ msgstr "好消息，我們現在提供免費的 API 金鑰"
+
+#~ msgid "To get a free API key, just"
+#~ msgstr "欲取得免費的API金鑰，只要"
+
+#~ msgid "Register and activate account"
+#~ msgstr "註冊並啟用帳號"
+
+#~ msgid "Get your free API key!"
+#~ msgstr "取得免費 API 金鑰"
+
+#~ msgid "To learn how to use our service, please read"
+#~ msgstr "欲得知如何使用我們的服務，請閱讀"
+
+#~ msgid "tutorials"
+#~ msgstr "教學"
+
+#~ msgid "Terms of service"
+#~ msgstr "使用者條款"
+
+#~ msgid "Terms of service goes here"
+#~ msgstr "Terms of service goes here"
+
+#~ msgid "Tutorials"
+#~ msgstr "教學"
+
+#~ msgid "EZComet is an Ajax/Comet cloud service, it is amazingly easy-to-use!"
+#~ msgstr "EZComet 是一個 Ajax/Comet 雲端服務，它不可思議地簡單好用!"
+
+#~ msgid "Receives messages on your web page"
+#~ msgstr "在您的網頁上接受訊息"
+
+#~ msgid ""
+#~ "To receive messages on your web page, simply insert \n"
+#~ "    following javascript snippet"
+#~ msgstr "欲在您的網頁上取得訊息，只要插入以下 javascript 程式片段"
+
+#~ msgid "&lt;script src=\""
+#~ msgstr "&lt;script src=\""
+
+#~ msgid "\"&gt;&lt;/script&gt;"
+#~ msgstr "\"&gt;&lt;/script&gt;"
+
+#~ msgid "and call our javascript API to subscribe events."
+#~ msgstr "然後呼叫我們的javascript API來收聽事件"
+
+#~ msgid ""
+#~ "&lt;script&gt;\n"
+#~ "        function callback(msg) {\n"
+#~ "            alert(msg);\n"
+#~ "        }\n"
+#~ "        ez_comet.subscribe({\n"
+#~ "            user_name: 'john1012', \n"
+#~ "            channel: 'my_channel', \n"
+#~ "            callback: callback\n"
+#~ "        });\n"
+#~ "    &lt;/script&gt;"
+#~ msgstr ""
+#~ "&lt;script&gt;\n"
+#~ "        function callback(msg) {\n"
+#~ "            alert(msg);\n"
+#~ "        }\n"
+#~ "        ez_comet.subscribe({\n"
+#~ "            user_name: 'john1012', \n"
+#~ "            channel: 'my_channel', \n"
+#~ "            callback: callback\n"
+#~ "        });\n"
+#~ "    &lt;/script&gt;"
+
+#~ msgid "Push messages to your channel"
+#~ msgstr "推送訊息到您的頻道"
+
+#~ msgid ""
+#~ "To push messages to your channel, all you have to do is \n"
+#~ "    to call our RESTful API, for example, to push a message, you can\n"
+#~ "    send a HTTP GET request, in following form"
+#~ msgstr "欲推送訊息到您的頻道，只要呼叫我們的 RESTful API，舉個例子，想推送一個訊息，您可以傳送一個 HTTP GET請求，如下列形式"
+
+#~ msgid ""
+#~ "http://api.ezcomet.com/write?qname=<Queue name>&api_key=<API "
+#~ "key>&msg=<Message>"
+#~ msgstr ""
+#~ "http://api.ezcomet.com/write?qname=<Queue name>&api_key=<API "
+#~ "key>&msg=<Message>"
+
+#~ msgid ""
+#~ "The \"Queue name\" should be \"<User "
+#~ "name>-<Channel name>\", for example, \n"
+#~ "    if your username is \"john1012\","
+#~ " and the channel is 'chat.messages', "
+#~ "then the queue name should be \n"
+#~ "    \"john1012-chat.messages\"."
+#~ msgstr ""
+#~ " \"Queue name\" 需要是 \"<User name>-<Channel name>\" 的形式, 舉個例子, \n"
+#~ "    如果您的使用者名稱是 \"john1012\", 以及頻道名稱是 'chat.messages', 那麼佇列名稱就是 \n"
+#~ "    \"john1012-chat.messages\"."
+
+#~ msgid "You can also send a HTTP POST request to"
+#~ msgstr "您也可以傳送一個 HTTP POST 請求到"
+
+#~ msgid "http://api.ezcomet.com/write"
+#~ msgstr "http://api.ezcomet.com/write"
+
+#~ msgid "with request body"
+#~ msgstr "包含一個請求的 body"
+
+#~ msgid "qname=<Queue name>&api_key=<API key>&msg=<Message>"
+#~ msgstr "qname=<Queue name>&api_key=<API key>&msg=<Message>"
+
+#~ msgid ""
+#~ "To write a program in your "
+#~ "favorite programming language to push "
+#~ "messages,\n"
+#~ "        you can try to find SDK at"
+#~ msgstr "想用您最喜愛的程式語言寫一個推送訊息的程式，您可以試著找找"
+
+# | msgid "Developer tools"
+#~ msgid "developer tools"
+#~ msgstr "開發者工具"
+
+#~ msgid "Push messages code examples"
+#~ msgstr "推送訊息程式範例"
+
+#~ msgid ""
+#~ "In this section, we show you how"
+#~ " to push messages to your channel "
+#~ "in different programming languages. Following"
+#~ " are \n"
+#~ "    code examples"
+#~ msgstr "在這節中我們將展示如何以不同的程式語言推送訊息到您的頻道，以下是程式範例"
+
+#~ msgid "Ruby"
+#~ msgstr "Ruby"
+
+#~ msgid ""
+#~ "&lt;?php\n"
+#~ "\n"
+#~ "/**\n"
+#~ "    This function pushs message to ezcomet.com\n"
+#~ "**/\n"
+#~ "function push_msg($api_key, $user_name, $channel, $msg){\n"
+#~ "    $ch = curl_init();\n"
+#~ "    curl_setopt($ch, CURLOPT_URL,'http://api.ezcomet.com/write');\n"
+#~ "    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);\n"
+#~ "    curl_setopt($ch, CURLOPT_TIMEOUT, 10);\n"
+#~ "    curl_setopt($ch, CURLOPT_POST, true);\n"
+#~ "    $data = array(\n"
+#~ "        'qname' => \"$user_name-$channel\",\n"
+#~ "        'api_key' => $api_key,\n"
+#~ "        'msg' => $msg\n"
+#~ "    );\n"
+#~ "    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);\n"
+#~ "    $result = curl_exec($ch);\n"
+#~ "    $result = @json_decode($result , TRUE);\n"
+#~ "    curl_close($ch);\n"
+#~ "    \n"
+#~ "    if( $result === FALSE || $result['code'] !== 'ok') {\n"
+#~ "        $msg = $result['msg'];\n"
+#~ "        throw new Exception(\"Failed to push message: $msg\");\n"
+#~ "    }\n"
+#~ "    return $result['tick'];\n"
+#~ "}\n"
+#~ "\n"
+#~ "$tick = push_msg('d409e8fee6654aaaa89d7f3493b6634f', "
+#~ "'demo', 'abc', 'Hello baby');\n"
+#~ "echo \"tick: $tick\";\n"
+#~ "\n"
+#~ "?&gt;"
+#~ msgstr ""
+#~ "&lt;?php\n"
+#~ "\n"
+#~ "/**\n"
+#~ "    This function pushs message to ezcomet.com\n"
+#~ "**/\n"
+#~ "function push_msg($api_key, $user_name, $channel, $msg){\n"
+#~ "    $ch = curl_init();\n"
+#~ "    curl_setopt($ch, CURLOPT_URL,'http://api.ezcomet.com/write');\n"
+#~ "    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);\n"
+#~ "    curl_setopt($ch, CURLOPT_TIMEOUT, 10);\n"
+#~ "    curl_setopt($ch, CURLOPT_POST, true);\n"
+#~ "    $data = array(\n"
+#~ "        'qname' => \"$user_name-$channel\",\n"
+#~ "        'api_key' => $api_key,\n"
+#~ "        'msg' => $msg\n"
+#~ "    );\n"
+#~ "    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);\n"
+#~ "    $result = curl_exec($ch);\n"
+#~ "    $result = @json_decode($result , TRUE);\n"
+#~ "    curl_close($ch);\n"
+#~ "    \n"
+#~ "    if( $result === FALSE || $result['code'] !== 'ok') {\n"
+#~ "        $msg = $result['msg'];\n"
+#~ "        throw new Exception(\"Failed to push message: $msg\");\n"
+#~ "    }\n"
+#~ "    return $result['tick'];\n"
+#~ "}\n"
+#~ "\n"
+#~ "$tick = push_msg('d409e8fee6654aaaa89d7f3493b6634f', "
+#~ "'demo', 'abc', 'Hello baby');\n"
+#~ "echo \"tick: $tick\";\n"
+#~ "\n"
+#~ "?&gt;"
+
+#~ msgid ""
+#~ "import json\n"
+#~ "import urllib\n"
+#~ "\n"
+#~ "ENDPOINT = 'http://api.ezcomet.com/write'\n"
+#~ "\n"
+#~ "def push_msg(api_key, user_name, channel, msg):\n"
+#~ "    qname = user_name + '-' + channel\n"
+#~ "    query = dict(api_key=api_key, qname=qname,"
+#~ " channel=channel, msg=msg)\n"
+#~ "    url = ENDPOINT + '?' + urllib.urlencode(query)\n"
+#~ "    f = urllib.urlopen(url)\n"
+#~ "    result = f.read()\n"
+#~ "    f.close()\n"
+#~ "    data = json.loads(result)\n"
+#~ "    if data['code'] != 'ok':\n"
+#~ "        raise RuntimeError('Failed to push "
+#~ "message: %s' % data['msg'])\n"
+#~ "    return data['tick']\n"
+#~ "        \n"
+#~ "print 'tick', push_msg('&lt;API key&gt;', "
+#~ "'john1012', 'channel1', 'hello baby!')"
+#~ msgstr ""
+#~ "import json\n"
+#~ "import urllib\n"
+#~ "\n"
+#~ "ENDPOINT = 'http://api.ezcomet.com/write'\n"
+#~ "\n"
+#~ "def push_msg(api_key, user_name, channel, msg):\n"
+#~ "    qname = user_name + '-' + channel\n"
+#~ "    query = dict(api_key=api_key, qname=qname,"
+#~ " channel=channel, msg=msg)\n"
+#~ "    url = ENDPOINT + '?' + urllib.urlencode(query)\n"
+#~ "    f = urllib.urlopen(url)\n"
+#~ "    result = f.read()\n"
+#~ "    f.close()\n"
+#~ "    data = json.loads(result)\n"
+#~ "    if data['code'] != 'ok':\n"
+#~ "        raise RuntimeError('Failed to push "
+#~ "message: %s' % data['msg'])\n"
+#~ "    return data['tick']\n"
+#~ "        \n"
+#~ "print 'tick', push_msg('&lt;API key&gt;', "
+#~ "'john1012', 'channel1', 'hello baby!')"
+
+#~ msgid "# coming soon"
+#~ msgstr "# coming soon"
+
+#~ msgid "Try it now!"
+#~ msgstr "現在就試試!"
+
+#~ msgid "You can go to"
+#~ msgstr "您可以前往"
+
+#~ msgid ""
+#~ "page, and see how it works, y\n"
+#~ "        ou can also"
+#~ msgstr "頁面，看看它是如何運作的，您也可以"
+
+#~ msgid "You already bought our service"
+#~ msgstr "您已經購買了我們的服務"
+
+#~ msgid "EZComet Beta $%s USD per month"
+#~ msgstr "EZComet Beta $%s USD 每個月"
+
+#~ msgid "Payment failed"
+#~ msgstr "付款失敗"
+
+#~ msgid "Payment failed with reason: %s (code: %s)"
+#~ msgstr "付款失敗: %s (code: %s)"
+
+#~ msgid "Confirmation"
+#~ msgstr "確認"
+
+#~ msgid "Your purchase is completed, please go to"
+#~ msgstr "您的採購已完成，請前往"
+
+#~ msgid "service"
+#~ msgstr "服務"
+
+#~ msgid "page to get your API key."
+#~ msgstr "頁面取得您的 API 金鑰"
+
+#~ msgid "Your payment is pending for reason"
+#~ msgstr "您的付款被列為暫緩"
+
+#~ msgid ""
+#~ ", \n"
+#~ "    please wait a moment or"
+#~ msgstr "請稍等或"
+
+#~ msgid "contact us"
+#~ msgstr "聯絡我們"
+
+#~ msgid "Features & prices"
+#~ msgstr "特色與價格"
+
+#~ msgid "Plans"
+#~ msgstr "方案"
+
+#~ msgid "Sandbox"
+#~ msgstr "Sandbox"
+
+#~ msgid "Price"
+#~ msgstr "價格"
+
+#~ msgid "FREE"
+#~ msgstr "免費"
+
+#~ msgid "Messages per day"
+#~ msgstr "每日訊息"
+
+#~ msgid "Connections"
+#~ msgstr "連線數"
+
+#~ msgid "Unlimited"
+#~ msgstr "不限"
+
+#~ msgid "SSL encryption"
+#~ msgstr "SSL加密"
+
+#~ msgid "YES"
+#~ msgstr "是"
+
+#~ msgid "Beta"
+#~ msgstr "Beta"
+
+#~ msgid "USD / month"
+#~ msgstr "USD / 月"
+
+#~ msgid "buy"
+#~ msgstr "購買"
+
+#~ msgid "Buy"
+#~ msgstr "購買"
+
+#~ msgid "Standard"
+#~ msgstr "標準"
+
+#~ msgid "$ ??? USD / month"
+#~ msgstr "$ ??? USD / 月"
+
+#~ msgid "coming soon"
+#~ msgstr "coming soon"
+
+#~ msgid "Coming soon"
+#~ msgstr "Coming soon"
+
+#~ msgid "Features"
+#~ msgstr "特色"
+
+#~ msgid ""
+#~ "[1:[2:] Beta]\n"
+#~ "        [3:We are proudly in very "
+#~ "early beta stage. And yes! this is"
+#~ " an awesome feature :D \n"
+#~ "           We will raise the price "
+#~ "when our service is more stable. "
+#~ "Buy it now when it is still "
+#~ "cheap!\n"
+#~ "        ]"
+#~ msgstr ""
+#~ "[1:[2:] Beta]\n"
+#~ "        [3:我們很驕傲地還在早期的 beta 階段，是的，這是很酷的特色 :D 我們會在服務更穩定時調漲價格，快趁現在便宜時購買]"
+
+#~ msgid ""
+#~ "[1:[2:] Money back guarantee]\n"
+#~ "        [3:We are in a open beta"
+#~ " stage, so you can get your "
+#~ "money back in 30 days for any "
+#~ "reason.]"
+#~ msgstr ""
+#~ "[1:[2:] 退款保證]\n"
+#~ "        [3:我們還在公開測試階段，因此您可以用任何理由在付款的三十天內要求退款]"
+
+#~ msgid ""
+#~ "[1:[2:] Easy-to-use]\n"
+#~ "        [3:Our service is amazingly "
+#~ "easy-to-use. No more annoying "
+#~ "configurations, setting-ups and optimizations."
+#~ " \n"
+#~ "            Just get an API key "
+#~ "then focus on developing your project"
+#~ " and enjoy the fun of developing "
+#~ "awesome interactive web apps!\n"
+#~ "        ]"
+#~ msgstr ""
+#~ "[1:[2:] 簡單好用]\n"
+#~ "        [3:我們的服務不可思議地簡單好用，再也沒有腦人的設定、安裝和最佳化調整，只要取得 API "
+#~ "金鑰然後專注在開發您的專案上，享受開發互動式酷炫網頁的樂趣         ]"
+
+#~ msgid ""
+#~ "[1:[2:] Secure]\n"
+#~ "        [3:All communications are protected by SSL encryption]"
+#~ msgstr ""
+#~ "[1:[2:] 安全]\n"
+#~ "        [3:所有連線都經由 SSL 加密保護]"
+
+#~ msgid ""
+#~ "[1:[2:] Scale]\n"
+#~ "        [3:Let us do the scale for you.]"
+#~ msgstr ""
+#~ "[1:[2:] 擴展性]\n"
+#~ "        [3:由我們來替您處理擴展性的問題]"
+
+#~ msgid ""
+#~ "[1:[2:] Economic]\n"
+#~ "        [3:Pay as much as you need.]"
+#~ msgstr ""
+#~ "[1:[2:] 經濟實惠]\n"
+#~ "        [3:只需要為您所需要的用量付款]"
+
+#~ msgid "Review"
+#~ msgstr "檢視"
+
+#~ msgid "Account:"
+#~ msgstr "帳號:"
+
+#~ msgid "Service"
+#~ msgstr "服務"
+
+#~ msgid "EZComet Service"
+#~ msgstr "EZComet 服務"
+
+#~ msgid "Plan:"
+#~ msgstr "方案"
+
+#~ msgid "Price:"
+#~ msgstr "價格:"
+
+#~ msgid "USD per month"
+#~ msgstr "USD 每月"
+
+#~ msgid "Start date:"
+#~ msgstr "開始日期"
+
+#~ msgid "Due:"
+#~ msgstr "截止:"
+
+#~ msgid "Daily quota:"
+#~ msgstr "每日用量:"
+
+#~ msgid "Used quota:"
+#~ msgstr "已使用量:"
+
+#~ msgid "Used percentage:"
+#~ msgstr "已使用百分比:"
+
+#~ msgid "API key:"
+#~ msgstr "API 金鑰:"
+
+#~ msgid "Development tools"
+#~ msgstr "開發工具"
+
+#~ msgid "To test your API key, you can use"
+#~ msgstr "欲測試您的 API 金鑰，您可以使用 "
+
+#~ msgid "tools"
+#~ msgstr "工具"
+
+#~ msgid "You have no active service"
+#~ msgstr "您沒有啟用的服務"
+
+#~ msgid "Failed to write msg, (%s)"
+#~ msgstr "無法寫入訊息 (%s)"
+
+#~ msgid "Write message to %s-%s"
+#~ msgstr "寫訊息到 %s-%s"
+
+#~ msgid "Developer tools"
+#~ msgstr "開發者工具"
+
+#~ msgid ""
+#~ "We do our best to provide tools to help you develop cool realtime\n"
+#~ "        web applications. If you can't"
+#~ " find something you think it should"
+#~ "\n"
+#~ "        be here, please don't be hesitate to"
+#~ msgstr "我們盡全力提供工具以幫助您開發酷炫的即時網頁應用程式，如果您無法在此找到您覺得應該要有的工具，請別猶豫"
+
+#~ msgid "Read channel"
+#~ msgstr "讀取頻道"
+
+#~ msgid "Write channel"
+#~ msgstr "寫入頻道"
+
+#~ msgid "Python SDK"
+#~ msgstr "Python SDK"
+
+#~ msgid "To install Python SDK for EZComet.com service, you can run"
+#~ msgstr "欲安裝 EZComet.com 服務的 Python SDK ，您可以執行"
+
+#~ msgid "easy_install ezcomet"
+#~ msgstr "easy_install ezcomet"
+
+#~ msgid "or you perfer pip"
+#~ msgstr "或是您較偏好 pip"
+
+#~ msgid "pip install ezcomet"
+#~ msgstr "pip install ezcomet"
+
+#~ msgid "You can also visit"
+#~ msgstr "您也可以拜訪"
+
+#~ msgid "http://pypi.python.org/pypi/ezcomet/"
+#~ msgstr "http://pypi.python.org/pypi/ezcomet/"
+
+#~ msgid "to download and install manually"
+#~ msgstr "下載並手動安裝"
+
+#~ msgid "Push messages"
+#~ msgstr "推送訊息"
+
+#~ msgid "Here we demonstrate how to push a message with Python SDK"
+#~ msgstr "在此我們示範如何用 Python SDk 推送一個訊息"
+
+#~ msgid ""
+#~ "import ezcomet\n"
+#~ "\n"
+#~ "api = EZCometAPI(api_key='your api key', user_name='john')\n"
+#~ "api.write('mychannel', 'hello baby')"
+#~ msgstr ""
+#~ "import ezcomet\n"
+#~ "\n"
+#~ "api = EZCometAPI(api_key='your api key', user_name='john')\n"
+#~ "api.write('mychannel', 'hello baby')"
+
+#~ msgid "fairly enough, right? :P"
+#~ msgstr "夠簡單對吧? :P"
+
+#~ msgid "Command line tool"
+#~ msgstr "命令列工具"
+
+#~ msgid "There is also a command line tool shipping with Python SDK:"
+#~ msgstr "也有一個命令列工具跟著 Python SDK 一起安裝"
+
+#~ msgid ""
+#~ "$ ezcomet_write --help\n"
+#~ "usage: ezcomet_write [-h] [-k API_KEY] "
+#~ "[-u USER_NAME] [-s] CHANNEL MESSAGE\n"
+#~ "\n"
+#~ "Write a message to EZComet.com\n"
+#~ "\n"
+#~ "positional arguments:\n"
+#~ "  CHANNEL               name of channel to write\n"
+#~ "  MESSAGE               message to write\n"
+#~ "\n"
+#~ "optional arguments:\n"
+#~ "  -h, --help            show this help message and exit\n"
+#~ "  -k API_KEY, --api-key API_KEY\n"
+#~ "                        API key of your EZComet service\n"
+#~ "  -u USER_NAME, --user-name USER_NAME\n"
+#~ "                        Username of your EZComet service\n"
+#~ "  -s, --no-ssl"
+#~ msgstr ""
+#~ "$ ezcomet_write --help\n"
+#~ "usage: ezcomet_write [-h] [-k API_KEY] "
+#~ "[-u USER_NAME] [-s] CHANNEL MESSAGE\n"
+#~ "\n"
+#~ "Write a message to EZComet.com\n"
+#~ "\n"
+#~ "positional arguments:\n"
+#~ "  CHANNEL               name of channel to write\n"
+#~ "  MESSAGE               message to write\n"
+#~ "\n"
+#~ "optional arguments:\n"
+#~ "  -h, --help            show this help message and exit\n"
+#~ "  -k API_KEY, --api-key API_KEY\n"
+#~ "                        API key of your EZComet service\n"
+#~ "  -u USER_NAME, --user-name USER_NAME\n"
+#~ "                        Username of your EZComet service\n"
+#~ "  -s, --no-ssl"
+
+#~ msgid "For example, to write a message, you can type"
+#~ msgstr "舉個例子，欲寫入一個訊息，您可以輸入"
+
+#~ msgid ""
+#~ "$ ezcomet_write -k your_api_key -u demo my_channel \"Hello baby\"\n"
+#~ "e0fee4f0477c46b7b78f0d1a9274465f"
+#~ msgstr ""
+#~ "$ ezcomet_write -k your_api_key -u demo my_channel \"Hello baby\"\n"
+#~ "e0fee4f0477c46b7b78f0d1a9274465f"
+
+#~ msgid "When you see a tick, the message is already pushed"
+#~ msgstr "當你看見一個 tick ，這表示訊息已送出"
+
+#~ msgid "Channel"
+#~ msgstr "頻道"
+
+#~ msgid "Subscribe"
+#~ msgstr "訂閱"
+
+#~ msgid "Channels:"
+#~ msgstr "頻道:"
+
+#~ msgid "API key"
+#~ msgstr "API 金鑰"
+
+#~ msgid "Message"
+#~ msgstr "訊息"
+
+#~ msgid "Account activation"
+#~ msgstr "帳號啟用"
+
+#~ msgid "Hi"
+#~ msgstr "Hi"
+
+#~ msgid ""
+#~ "Thanks for your registration! To activate your account, please\n"
+#~ " click the link"
+#~ msgstr "感謝您的註冊，欲啟用您的帳，請點擊下列連結"
+
+#~ msgid ""
+#~ "If you didn't register the account "
+#~ "on EZComet.com, please just ignore this"
+#~ " email."
+#~ msgstr "如果您沒有在 EZComet.com 註冊帳號，請忽略此 email"
+
+#~ msgid "Enjoy the cloud service :)"
+#~ msgstr "享受雲端服務"
+
+#~ msgid "EZComet.com team"
+#~ msgstr "EZComet.com 團隊"
+

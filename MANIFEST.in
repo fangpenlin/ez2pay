@@ -1,0 +1,6 @@
+include .coveragerc
+include requirements.txt 
+include test_requirements.txt 
+include CHANGES.rst
+include README.rst
+recursive-include ez2pay *.ico *.png *.css *.gif *.jpg *.pt *.txt *.mak *.mako *.js *.html *.xml *.genshi *.yaml *.eot *.svg *.ttf *.woff *.otf *.map

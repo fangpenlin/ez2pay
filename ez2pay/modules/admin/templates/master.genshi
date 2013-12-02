@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      py:strip="">
+
+<body py:match="body" py:attrs="select('@*')">
+
+    <section class="row">
+        <aside class="col-md-2">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="${ request.route_url('admin.user_list') }"><i class="icon-user"></i> Users</a></li>
+                <li><a href="${ request.route_url('admin.group_list') }"><i class="icon-group"></i> Groups</a></li>
+                <li><a href="${ request.route_url('admin.permission_list') }"><i class="icon-check"></i> Permissions</a></li>
+            </ul>
+        </aside>
+        
+        <section id="main-section" class="col-md-10">
+            <div py:replace="select('*|text()')"/>
+        </section>
+    </section>
+
+
+</body>
+    <xi:include href="../../../templates/master.genshi" />
+</html>
