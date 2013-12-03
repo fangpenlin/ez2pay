@@ -93,9 +93,7 @@ for msg in msgs:
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li py:attrs="{'class': 'active'} if request.route_name == 'front.contact_us' else {}">
-                        <a href="${ request.route_url('front.contact_us') }"><i class="icon-comments"></i> Contact us</a>
-                    </li>
+                    
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <py:if test="request.user_id is None">

@@ -2,8 +2,7 @@ from __future__ import unicode_literals
 
 from wtforms import Form
 from wtforms import TextField
-from wtforms import TextAreaField
-from wtforms import validators
+from wtforms import HiddenField
 
 from ez2pay.i18n import LocalizerFactory
 
@@ -16,17 +15,23 @@ class FormFactory(object):
         self.localizer = localizer
         _ = self.localizer
         self.required_msg = _(u'This field is required.')
-        self.invalid_email_msg = _(u'Invalid email address.')
     
-    def make_contact_form(self):
+    def make_payment_form(self):
         _ = self.localizer
 
-        class ContactForm(Form):
-            email = TextField(_(u'Email address'), [
-                validators.Required(self.required_msg),
-                validators.Email(self.invalid_email_msg)
+        class PaymentForm(Form):
+            first_name = TextField(_('First name'), [
             ])
-            content = TextAreaField(_(u'Content'), [
-                validators.Required(self.required_msg)
+            last_name = TextField(_('Last name'), [
             ])
-        return ContactForm
+            card_number = TextField(_('Card number'), [
+            ])
+            expire_year = TextField(_('Expire Year (e.g. 2013)'), [
+            ])
+            expire_month = TextField(_('Expire month (e.g. 10)'), [
+            ])
+            security_code = TextField(_('Security code'), [
+            ])
+            payment_uri = HiddenField(_(''), [
+            ])
+        return PaymentForm 

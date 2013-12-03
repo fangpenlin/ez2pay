@@ -1,12 +1,13 @@
 from __future__ import unicode_literals
 
+import balanced
 from pyramid.view import view_config
 from pyramid.httpexceptions import HTTPBadRequest
 from pyramid.httpexceptions import HTTPFound
 
 from ez2pay.i18n import normalize_locale_name
 from ez2pay.i18n import LocalizerFactory
-from ez2pay.mail import send_mail
+from ez2pay.utils import check_csrf_token
 from .forms import FormFactory
 
 get_localizer = LocalizerFactory()
@@ -46,72 +47,33 @@ def terms_of_service(request):
     return dict()
 
 
-@view_config(route_name='front.contact_us_received', 
-             renderer='templates/contact_us_received.genshi')
-def contact_us_received(request):
-    return dict()
-
-
-@view_config(route_name='front.contact_us', 
-             renderer='templates/contact_us.genshi')
-def contact_us(request):
+@view_config(route_name='front.payment', 
+             renderer='templates/payment.genshi')
+def payment(request):
+    # TODO: get the form record from database and determine which account
+    # for processing the payment, and what kind of limitation we have here
     _ = get_localizer(request)
-    
     factory = FormFactory(_)
-    ContactForm = factory.make_contact_form()
-    form = ContactForm(request.params)
+    PaymentForm = factory.make_payment_form()
+    form = PaymentForm()
 
-    if request.method == 'POST' and form.validate():
-        email = request.params['email']
-        content = request.params['content']
-      
-        cfg = request.registry.settings['contact_us']
-        recipients = cfg['recipients']
-        cc = cfg['cc']
-        
-        headers = ['%s: %s' % (key, value) 
-                   for key, value in request.headers.iteritems()]
-        headers = '\n'.join(headers)
-        params = dict(
-            short_content=content[:10],
-            content=content,
-            email=email,
-            remote_addr=request.real_ip,
-            headers=headers,
+    if request.method == 'POST':
+        check_csrf_token(request)
+
+        # TODO: tokenlize the card
+        payment_uri = request.params['payment_uri']
+        print '#'*10, payment_uri
+
+        balanced.configure('ef13dce2093b11e388de026ba7d31e6f')
+        customer = balanced.Customer()
+        customer.save()
+        customer.add_card(payment_uri)
+        customer.debit(
+            amount=12345,
+            source_uri=payment_uri,
+            description='Payment made via EZ2Pay for XXX',
         )
-        
-        mail_template = """
-Mail from ez2pay contacts page
-------------------------------
-Sender mail: %(email)s
-Content: 
+        return dict(form=form, processed=True)
+        # TODO: call the balanced API, charge the card
 
-%(content)s
-
-------------------------------
-Remote-Address: %(remote_addr)s
-
-Headers: 
-%(headers)s
-
-"""
-        body = mail_template % params
-
-        subject = cfg['subject'] % params
-        subject = subject.replace('\n', ' ')
-        subject = subject.replace('\r', ' ')
-        send_mail(
-            request=request,
-            subject=subject,
-            to_addresses=recipients,
-            cc_addresses=cc,
-            reply_addresses=email,
-            format='text',
-            body=body
-        )
-        
-        msg = _(u'We have received your message, thank you')
-        request.add_flash(msg, 'success')
-        return HTTPFound(location=request.route_url('front.contact_us_received'))
-        
-    return dict(form=form)
+    return dict(form=form, processed=False)

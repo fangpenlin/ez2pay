@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:i18n="http://genshi.edgewall.org/i18n"
+>
+      
+    <xi:include href="../../../templates/widgets/form.genshi" />
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+    <link 
+        rel="stylesheet" 
+        href="${ request.static_url('ez2pay:static/bootstrap/css/bootstrap.min.css') }" 
+        type="text/css" 
+    />
+    <title>Payment</title>
+
+    <script type="text/javascript" src="https://js.balancedpayments.com/v1/balanced.js">
+    </script>
+    <script 
+        type="text/javascript" 
+        src="${ request.static_url('ez2pay:static/js/jquery-1.10.2.min.js') }"
+    ></script>
+
+    <!-- TODO: read the marketplace URI from database -->
+
+    <script type="text/javascript">
+        $(function () {
+            balanced.init('/v1/marketplaces/TEST-MP7hkE8rvpbtYu2dlO1jU2wg/activity/transactions');
+
+            var form = $('#payment_form');
+            form.find('#card_number').val('5105105105105100');
+            form.find('#expire_month').val('12');
+            form.find('#expire_year').val('2020');
+            form.find('#security_code').val('123');
+
+            form.submit(on_submit);
+        });
+
+        function on_submit(event) {
+            var form = $('#payment_form');
+            if (form.find('#payment_uri').val()) {
+                console.log('GOOOOOO');
+                return true;
+            }
+            var card_data = {
+                card_number: form.find('#card_number').val(),
+                expiration_month: form.find('#expire_month').val(),
+                expiration_year: form.find('#expire_year').val(),
+                security_code: form.find('#security_code').val()
+            };
+            console.log(card_data);
+            balanced.card.create(card_data, function(response) {
+                console.log(response.status);
+                /*
+                response.data:
+                  Contains the body of the card resource, which you can find
+                  in the API reference.
+
+                  This data is an object, i.e. hash, that can be identified by
+                  its uri field. You may store this uri in your data store (e.g.
+                  postgresql, mysql, mongodb, etc) since it's perfectly safe and
+                  can only be retrieved by your secret key.
+
+                  More on this in the API reference.
+                */
+                console.log(response.data);
+                form.find('#payment_uri').val(response.data.uri);
+                form.submit();
+            });
+            event.preventDefault();
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Payment</h2>
+
+<py:if test="not processed">
+    <p>$123.45 will appear on your card as "Pound LLC"</p>
+
+    <form 
+        id="payment_form"
+        name="payment_form"
+        role="form" 
+        class="form-horizontal" 
+        action="${ request.route_url('front.payment') }" 
+        method="POST" 
+    >
+        <py:for each="field in form">
+            <py:if test="field.type != 'HiddenField'">
+                ${ form_field(field) }
+            </py:if>
+        </py:for>
+        
+        <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+                <input name="submit-button" class="btn btn-default" type="submit" value="Pay" />
+            </div>
+        </div>
+        <py:for each="field in form">
+            <py:if test="field.type == 'HiddenField'">
+                ${ form_field(field) }
+            </py:if>
+        </py:for>
+        <input type="hidden" name="csrf_token" value="${ request.session.get_csrf_token() }" />
+    </form>
+</py:if>
+<py:if test="processed">
+    <p>Payment has been processed, $123.45 will appear on your card as "Pound LLC".
+        Thank you for purchasing.
+    </p>
+</py:if>
+
+
+</body>
+</html>
